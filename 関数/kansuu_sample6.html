@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>関数</title>
+    </head>
+
+
+<body>
+
+    <script type="text/javascript">
+        //無名関数での実行
+        var hensu1 = function(x){
+            var result = 2*x ;
+            return result;
+        }
+        var hensuu2 = hensu1;
+
+        var data1 = hensu1(10);
+        document.write(data1 + "<br>");
+
+        var data2 = hensuu2(20);
+        document.write(data2 + "<br>");
+    </script>
+</body>
+</html>
