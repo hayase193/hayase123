@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ビルドインオブジェクト(String)</title>
+    </head>
+
+
+<body>
+
+    <script type="text/javascript">
+        //関数宣言
+        var s1 = "ABC"
+        var s2 = new String("あいうえお");
+        var s3 = "JavaScriptプログラミング";
+        var s4 = "北海道_東京_大阪_福岡"
+
+        document.write("s1の文字数 : " + s1.length + "<br>");
+        document.write("s2の文字数 : " + s2.length + "<br>");
+
+        //先頭は０番目、指定の文字がなければ－１
+        document.write("「S」の位置 : " + s3.indexOf("S") + "<br>");
+        document.write("「x」の位置 : " + s3.indexOf("x") + "<br>");
+
+        //４番目から６文字
+        document.write(s3.substr(4, 6) + "<br>");
+
+        //変換
+        var after =s3.replace("プログラミング", "ぷろぐらみんぐ")
+
+        document.write("変換前:" + s3 + "<br>");
+        document.write("変換後:" + after + "<br>");
+        
+        //_で区切り、配列にする
+        var list = s4.split("_");
+        for(var i = 0; i < list.length; i++){
+            document.write(list[i] + "<br>")
+        }
+    </script>
+</body>
+</html>

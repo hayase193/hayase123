@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ｵﾌﾞｼﾞｪｸﾄ</title>
+    </head>
+
+
+<body>
+
+    <script type="text/javascript">
+        //関数宣言
+        var Product = function(n, p){
+            this.name = n;
+            this.price = p;
+
+            this.display = function(){
+                document.write("名前：" + this.name + "<br>")
+                document.write("値段：" + this.place + "<br>")
+            }
+        }
+        Product.prototype.tax = 0.08;
+
+        Product.prototype.displayTax = function(){
+            document.write("消費税" + this.tax + "<br>")
+        }
+
+        //1つ目の商品
+        var p1 = Product("りんご",200);
+        p1.display();
+        p1.displayTax();
+
+        //2つ目の商品
+        var p2 = Product("みかん",150);
+        p1.display();
+        p1.displayTax();
+    </script>
+</body>
+</html>
