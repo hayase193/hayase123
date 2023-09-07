@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOMオブジェクト(Date)</title>
+
+        <script type="text/javascript">
+            function f(){
+                var s1 = document.body.childNodes[1].childNodes[0].nodeValue;
+                var s2 = document.body.childNodes[2].nodeValue;
+
+                var elem = document.body.childNodes[3]
+
+                var type = elem.type;
+                var value = elem.value;
+
+                window.alert(s1 + "\n" + s2 + "\ntype : " + type + "\nvalue：" + value)
+            }
+        </script>
+    </head>
+
+
+<body>
+<h1>文字データ</h1>
+文字データ２
+<input type="button" value="ボタン" onClick="f();">
+</body>
+</html>

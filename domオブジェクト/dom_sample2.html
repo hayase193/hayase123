@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOMオブジェクト(Date)</title>
+
+        <script type="text/javascript">
+            function f(){
+                var items = document.getElementsByTagName("li");
+
+                var s = "";
+
+                for (var i =0; i < items.length; i++){
+                    s += items[i].innerHTML + "\n";
+                }
+                window.alert(s);
+            }
+        </script>
+    </head>
+
+
+<body>
+<ul>
+    <li>北海道</li>
+    <li>東京</li>
+    <li>大阪</li>
+    <li>福岡</li>
+</ul>
+<input type="button" value="ボタン" onClick="f();">
+</body>
+</html>

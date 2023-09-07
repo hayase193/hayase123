@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOMオブジェクト(Date)</title>
+
+        <script type="text/javascript">
+            function f(){
+                //HTML内でIdが同じ要素を代入
+                var strElem = document.getElementById("str");
+                var displayElem = document.getElementById("display")
+                //strElemの入力要素を代入
+                var s = strElem.value;
+
+                displayElem.innerHTML = s;
+                strElem.value = "";
+
+            }
+        </script>
+    </head>
+
+
+<body>
+<div id ="display"> 文字を入力してください。</div>
+<input type = "text" id = "str">
+<input type="button" value="ボタン" onClick="f();">
+</body>
+</html>
