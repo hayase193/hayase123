@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>チェックボックスの値取得</title>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" class="checks" value="りんご"> りんご<br>
+        <input type="checkbox" class="checks" value="バナナ"> バナナ<br>
+        <input type="checkbox" class="checks" value="みかん"> みかん<br>
+        <button onclick="getValue()">値を取得</button>
+        <button onClick="f(true);">全選択</button>
+        <button onClick="f(false);">全解除</button>
+    </div>
+
+    <script>
+        function getValue() {
+            var checks = document.getElementsByClassName('checks');
+            var text1 = '';
+
+            for ( i = 0; i < 3; i++) {
+                if ( checks[i].checked === true ) {
+                    text1 += checks[i].value + ",";
+                }
+            }
+            alert(text1);
+        }
+        function f(judge){
+            var items = document.getElementsByClassName('checks');
+
+            for (var i =0; i < items.length; i++){
+                items[i].checked = judge;
+                }
+            }
+    </script>
+</body>
+</html>
+    </div>
+</body>
+</html>
