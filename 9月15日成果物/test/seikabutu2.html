@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>入力の許可</title>
+</head>
+<body>
+<select id="ex_age">
+    <option value="under">20歳未満</option>
+    <option value="over">20歳以上</option>
+    </select>
+    
+    <input id="ex_box" type="text" disabled />
+    
+    <script>
+    document.getElementById("ex_age").addEventListener("change", function(){
+        var age_elem = document.getElementById("ex_age");
+        var s_value = age_elem.options[age_elem.selectedIndex].value;
+        var box_elem = document.getElementById("ex_box");
+        
+        if(s_value == "under"){
+            //disabledをtrueで入力不可、falseで入力可能
+            box_elem.disabled = true;
+        }else{
+            box_elem.disabled = false;
+        }
+    }, false);
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>入力バーの表示</title>
+</head>
+<body>
+<select id="ex_age_a">
+<option value="under">20歳未満</option> 
+<option value="over">20歳以上</option>
+</select>
+
+<div id="ex_box_div_a" style="display:none;">
+<input id="ex_box_a" type="text" />
+</div>
+
+<script>
+	//ex_age_aに変更があった時に無名関数を実行
+document.getElementById("ex_age_a").addEventListener("change", function(){
+	var age_elem = document.getElementById("ex_age_a");
+	//selectedIndexはその変数の値を取り出す
+	var s_value = age_elem.options[age_elem.selectedIndex].value;
+	var box_div_elem = document.getElementById("ex_box_div_a");
+	
+	if(s_value == "under"){
+		//style.displayをnoneに変数をすることで表示しない
+		box_div_elem.style.display = 'none';
+	}else{
+		//style.displayをblockに変数をすることで表示する
+		box_div_elem.style.display = 'block';
+	}
+}, false);
+
+</script>
+</body>
+</html>
