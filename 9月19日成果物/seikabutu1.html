@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>入力バーの表示</title>
+</head>
+<body>
+
+    <div id = "buttons1">
+        <button onclick = "modoru()"> ◀︎ </button>
+        <button onclick = "susumu()"> ▶︎ </button>
+    </div>
+    
+    <!-- １番外の可視領域 -->
+<div id = "grandparent">
+    <!-- 要素を並べる領域 -->
+    <div id = "parent">
+          <img src = "a.png">
+          <img src = "b.png">
+          <img src = "c.png">
+          <img src = "d.png">
+    </div>
+    
+    <!-- ボタン部分 -->
+
+</body>
+
+<style>
+    #grandparent {
+        width:18em;
+        height:18em;
+        margin:0 auto;
+        overflow:hidden;
+        border:solid 1px;
+}
+
+
+#parent {
+    width:400%;
+    height:100%;
+    background-color:#fff;
+    display:flex;
+}
+
+
+#parent img {
+    width:20%;
+    margin:5%;
+}
+
+</style>
+
+<script>
+
+const parent = document.getElementById("parent");
+
+//進むボタンを押した時の関数
+function susumu() {
+
+//アニメーション発火 
+parent.classList.add("susumu");
+parent.insertBefore(parent.children[0],parent.children[parent.children.length+1]);
+//アニメーション完了時のイベントリスナ 
+parent.addEventListener("animationend",{once:true});
+}
+
+//戻るボタンを押したときの関数
+function modoru() {
+
+//アニメーション発火
+parent.classList.add("modoru");
+//要素の順番を入れ替え
+parent.insertBefore(parent.children[parent.children.length-1],parent.children[0]);
+//アニメーション完了時のイベントリスナ
+parent.addEventListener("animationend",{once:true});
+}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>サンプル</title>
+</head>
+<body>
+<!-- pで改行 -->
+<p>サンプルページです。</p>
+    <div id="app">
+        <input type="text" name="input1" value="" onKeyup="calc()">
+        <span>+<span>
+        <input type="text" name="input2" value="" onKeyup="calc()">
+        <span>=<span>
+        <input type="text" name="result" value="0" readonly>
+    </div>
+
+<script>
+const calc = ()=>{
+    //querySelector　HTML要素をid属性、class属性に関係なく、取り出すこと可能
+    //input　ユーザーの操作によって変更された際にイベントを発生させる
+    const input1 = document.querySelector("input[name=input1]");
+    const input2 = document.querySelector("input[name=input2]");
+    const result = document.querySelector("input[name=result]");
+    
+    result.value = Number(input1.value) + Number(input2.value);
+}
+</script>
+
+</body>
+</html>
