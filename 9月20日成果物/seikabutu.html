@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>見積作成</title>
+</head>
+<body>
+    <div class="container">
+        宿泊日数<br>
+        <input type="date" id="times" value=new Date() min=new Date() max="2028-12-31" onchange="stay()"/>
+        <input type="date" id="time1" value=new Date() min=new Date() max="2028-12-31" onchange="stay()"/><br>
+
+        <input type="text" name="staytime" value="0" readonly><br>
+        
+        <select id="fruit">
+            <option value="null">選択してください</option>
+            <option value="orange">Orange</option>
+            <option value="lemon">Lemon</option>
+            <option value="strawberry">Strawberry</option>
+        </select><br>
+        
+
+        こだわり<br>
+        <input type="checkbox" class="checks" name="fruit" value="10" onchange="calc()"> りんご<br>
+        <input type="checkbox" class="checks" name="fruit1" value="20" onchange="calc()"> バナナ<br>
+        <input type="checkbox" class="checks" name="fruit2" value="30" onchange="calc()"> みかん<br>
+
+        <input type="text" name="result" value="0" readonly>
+    </div>
+
+<script src="test.js"> 
+</script>
+
+<script src="test2.js"> 
+</script>
+
+</body>
+</html>
+    </div>
+</body>
+</html>
