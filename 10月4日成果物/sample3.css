@@ -1,0 +1,33 @@
+.group{
+    width:500px;
+    height:200px;
+    background-color: red;
+}
+
+.group1{
+    width:600px;
+    height:100px;
+    background-color: blue;
+}
+
+.sample{
+    width:500px;
+    height:100px;
+    background-color:aquamarine;
+}
+
+.sample1{
+    width:50%;
+    height:100px;
+    background-color: blue;
+    float:left;
+}
+
+.sample2{
+    width:25%;
+    height:100px;
+    background-color: red;
+    float:left;
+}
+
+

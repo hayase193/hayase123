@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+}
+
+p { 
+    color: blue;
+    color: green;
+}
+
+.exe {
+    color:aqua;
+}
+
+#pass {
+    font-size: 30;
+    color:blueviolet
+}
+
+[href] {
+    color:aquamarine;
+}
+
+main h1{
+    color:red;
+}
+
+main p.iro {
+    color:blue;
+}
