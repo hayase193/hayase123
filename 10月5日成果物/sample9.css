@@ -1,0 +1,23 @@
+.image{
+    width: 500px;
+    height: 500px;
+    background-image: url(https://1.bp.blogspot.com/-sb6_0EndDj4/XexrdNZlw1I/AAAAAAABWpM/m8dTVCD9jx4h3RzER6acvUFx3evYCqsEACNcBGAsYHQ/s500/train_arashiyama_torokko_kouyou.png);
+    background-repeat: repeat-y;/*ｙは縦方向にｘは横方向にリピート*/
+    background-repeat: no-repeat;/*リピートなし*/
+}
+
+.image1{
+    width: 500px;
+    height: 500px;
+    background-image: url(https://1.bp.blogspot.com/-VUSfAXATfMs/Xexrcw92KDI/AAAAAAABWpI/fNuSWAtz01k0rWLI-EOoFvoo7dwZnXaLQCNcBGAsYHQ/s180-c/train_arashiyama_torokko.png);
+    background-repeat: no-repeat;/*リピートなし*/
+    background-size: contain;/*要素のサイズを変更できる*/
+}/*containは要素内に画像をすべて入れる、coverは画像比率を維持したまま要素内に表示*/
+
+.image2{
+    width: 500px;
+    height: 500px;
+    background-image: url(https://1.bp.blogspot.com/-HX9YoPvSXGU/Xbo7TFwtdeI/AAAAAAABV1E/arOPnwHGd6kdZvhLgl0UH7QG8LKTpKTXACNcBGAsYHQ/s180-c/monogatari_shima_onigashima.png);
+    background-repeat: no-repeat;/*リピートなし*/
+    background-position: 200px 400px;/*１つめが左側からの距離、2つめが上からの距離*/
+}

@@ -1,0 +1,28 @@
+.sample{
+    font-size: 15px;
+    line-height: 2;/*単位ナシは記載数倍する*/
+    background-color: blue;
+}
+
+.parent{
+    font-size: 32px;
+    line-height: 2; /*emや％は親要素を引き継ぐため注意*/
+}
+
+.child{
+    font-size: 16px;
+    background-color: aqua;
+}
+
+.sample{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+p.sample{
+    color:aliceblue;
+    line-height: 200px;/*縦で動かすことができる*/
+    text-align: center;/*横で動かすことができる*/
+}
+

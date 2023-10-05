@@ -1,0 +1,42 @@
+.sample{/*カーソルを乗せたときに色を変える*/
+    width: 100px;
+    height: 50px;
+    background: blue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sample:hover{
+    background-color: chocolate;
+    opacity: 0.7;/*透化する*/
+    border-radius: 50%;/*角を丸くする*/
+}
+
+.sample1{ /*影をつけ、カーソルを置いた際に影を消し動いているように表示*/
+    width: 100px;
+    height: 50px;
+    background: blue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    box-shadow:0 5px black ;
+}
+
+.sample1:hover{
+    box-shadow: none;
+    transform: translate(0, 5px);
+}
+
+.sample2{/*カーソルを乗せた際にボタンを大きくする*/
+    width: 100px;
+    height: 50px;
+    background: green;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sample2:hover{
+    transform: scale(1.2, 1.2);
+}

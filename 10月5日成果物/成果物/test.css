@@ -1,0 +1,54 @@
+.header__inner{
+    background-color: azure;
+    height: 75px;
+    font-size: 32px;
+}
+
+.pic{
+    height: 65px;
+    width: 65px;
+    background-size: contain;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+}
+
+.main{
+    background-color: antiquewhite;
+    height: 800px;
+    margin: auto;
+
+}
+
+.footer{
+    background-color: aqua;
+    height: 200px;
+    margin: auto;
+}
+
+.Check{
+    background-color: red;
+    border-color: transparent;
+    position: fixed;
+    top: 36px;
+    right: 15px;;
+}
+
+.Check span {
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+    display: block;
+  }
+  
+  .Check span:nth-child(1) {
+    top: 0;
+  }
+  
+  .Check span:nth-child(2) {
+    margin: 8px 0;
+  }
+  
+  .Check span:nth-child(3) {
+    top: 0;
+  }

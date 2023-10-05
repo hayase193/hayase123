@@ -1,0 +1,15 @@
+h1::before{/*テキストの前後に要素をつける*/
+    content:"こんにちわ";
+    font-size: 30px;
+    color:red;
+    display: block;
+}
+
+.example::after{
+    content:")"
+}
+.example::before{
+    content:"("
+}
+
+
