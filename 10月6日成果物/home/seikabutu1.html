@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>入力バーの表示</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <header class="header">
+        <div><img class="pic" src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5cf9a3965cda199c/image/i9ce8e52bcb8f7cfe/version/1474086423/image.png"></div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">プラン</a></li>
+                <li><a href="#">問い合わせ</a></li>
+            </ul>
+        </nav>
+    
+</header>    
+    
+<!-- ボタン部分 -->
+<div id = "buttons1">
+        <button onclick = "modoru()"> ◀︎ </button>
+        <button onclick = "susumu()"> ▶︎ </button>
+</div>
+    
+    <!-- １番外の可視領域 -->
+<div id = "grandparent">
+    <!-- 要素を並べる領域 -->
+    <div id = "parent">
+          <img src = "a.png">
+          <img src = "b.png">
+          <img src = "c.png">
+          <img src = "d.png">
+    </div>
+    
+
+
+</div>
+<main>
+
+<p class="side_text">
+    <h2>ホテルの特長</h2><br>
+    <h3>1. リッチな客室</h3>
+    広々とした豪華な客室で、くつろぎのひとときをお楽しみください。贅沢な寝具と快適なインテリアが、快適な滞在をサポートします。<br>
+    <h3>2. 絶品のレストラン</h3><br>
+    当ホテル内のレストランでは、世界各国の美味しい料理を提供しています。シェフが厳選した食材で調理された料理は、お客様の味覚を満たします。<br>
+    <h3>3. リラックス＆リフレッシュ</h3><br>
+    屋外プールやスパで、心地よいリフレッシュタイムをお過ごしください。また、フィットネスセンターもご利用いただけます。<br>
+    <h2>地理的位置</h2>
+    グランド ブリーズ ホテルは、都心からわずか数分の距離に位置しています。観光やビジネスでの滞在に最適なロケーションです。<br>
+    お客様のご滞在が心地よく、思い出に残るものとなるよう、心よりおもてなしいたします。ぜひ、当ホテルで特別なひとときをお過ごしください。<br>
+</p>
+
+</main>
+</body>
+
+
+<script type="text/javascript">
+
+const parent = document.getElementById("parent");
+
+//進むボタンを押した時の関数
+function susumu() {
+
+//アニメーション発火 
+parent.classList.add("susumu");
+parent.insertBefore(parent.children[0],parent.children[parent.children.length+1]);
+//アニメーション完了時のイベントリスナ 
+parent.addEventListener("animationend",{once:true});
+}
+
+//戻るボタンを押したときの関数
+function modoru() {
+
+//アニメーション発火
+parent.classList.add("modoru");
+//要素の順番を入れ替え
+parent.insertBefore(parent.children[parent.children.length-1],parent.children[0]);
+//アニメーション完了時のイベントリスナ
+parent.addEventListener("animationend",{once:true});
+}
+
+</script>
+
+
+</body>
+
+
+</html>

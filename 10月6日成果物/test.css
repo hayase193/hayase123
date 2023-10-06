@@ -1,0 +1,56 @@
+body, h1, h2, p, ul{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+    background-color: azure;
+    height: 100px;
+    width: auto;
+    display: flex;
+}
+
+.pic{
+    height: 100px;
+    width: auto;
+    background-size: contain;
+}
+
+.nav ul{
+  
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  line-height: 75px;
+}
+
+.nav li{
+  margin: 15px;
+}
+
+.nav a{
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover{
+  opacity: 0.5;
+}
+
+.main{
+    background-color: antiquewhite;
+    height: 800px;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+}
+
+.footer{
+    background-color: aqua;
+    height: 200px;
+    margin: auto;
+}
+

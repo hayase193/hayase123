@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>さんぷる04-2</title>
+        <link rel="stylesheet" href="test.css">
+    </head>
+
+
+<body>
+    <header class="header">
+            <div><img class="pic" src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5cf9a3965cda199c/image/i9ce8e52bcb8f7cfe/version/1474086423/image.png"></div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">プラン</a></li>
+                    <li><a href="#">問い合わせ</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <main>
+        <div class="main">
+            <select id="grade">
+                <option value="null">選択してください</option>
+                <option value="1">スタンダード</option>
+                <option value="2">デラックス</option>
+                <option value="3">セミスイート</option>
+                <option value="4">スイート</option>
+            </select><br>
+            <a href="file:///C:/Users/Owner/.vscode/.vscode/9%E6%9C%8821%E6%97%A5%E6%88%90%E6%9E%9C%E7%89%A9/home/seikabutu1.html">ホテルの詳細</a><br>
+            <div class="container">
+                宿泊日数<br>
+                <input type='date' id="times" name = 'date' value=new Date() min=new Date() max="2028-12-31"/>
+                <input type="date" id="time1" name = "date1" value=new Date() min=new Date() max="2028-12-31"/><br>
+        
+                <p id="output">Change the Date</p>
+                <select id="ninzu">
+                    <option value="null">選択してください</option>
+                    <option value="1">1名</option>
+                    <option value="2">2名</option>
+                    <option value="3">3名</option>
+                    <option value="4">4名</option>
+                    <option value="5">5名</option>
+                    <option value="6">6名</option>
+                </select><br>
+                こだわり<br>
+                <select id="ex_age">
+                    <option value="under">こだわりなし</option>
+                    <option value="over">こだわりあり</option>
+                    </select><br>
+                
+                <input type="checkbox" id="hitch" class="checks" name="fruit" value="10" onchange="calc()" disabled> りんご<br>
+                <input type="checkbox" id="hitch" class="checks" name="fruit1" value="20" onchange="calc()" disabled> バナナ<br>
+                <input type="checkbox" id="hitch2" class="checks" name="fruit2" value="30" onchange="calc()" disabled> みかん<br>
+        
+                <input type="text" name="result" value="平和" readonly>
+            </div>
+        
+        <script src="kansu.js"> 
+        
+        </script>
+        
+        <script src="onoff.js"> 
+        </script>
+        
+        </body>
+        </html>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+          フッターエリア
+        </div>
+      </footer>
+</body>
+</html>
