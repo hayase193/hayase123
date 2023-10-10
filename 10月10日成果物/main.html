@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>さんぷる04-2</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="slideshow.css">
+        <link rel="stylesheet" href="footer.css">
+    </head>
+
+
+<body>
+    <header class="header">
+            <div><img class="pic" src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5cf9a3965cda199c/image/i9ce8e52bcb8f7cfe/version/1474086423/image.png"></div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">プラン</a></li>
+                    <li><a href="#">問い合わせ</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+    <main>
+        <div class="main">
+            <div class="text-main">
+                <h2>○○○○ホテル宿泊プラン　～こだわりプラン～　</h2>
+                <div class=choise>
+                <br><br>個室グレード：<select id="grade">
+                <option value="null">選択してください</option>
+                <option value="1">スタンダード</option>
+                <option value="2">デラックス</option>
+                <option value="3">セミスイート</option>
+                <option value="4">スイート</option>
+            </select><br><br>
+            <a href="file:///C:/Users/Owner/.vscode/10%E6%9C%8810%E6%97%A5%E6%88%90%E6%9E%9C%E7%89%A9/home/sub.html">ホテルの詳細</a><br><br>
+                宿泊日数<br>
+                <input type='date' id="times" name = 'date' value=new Date() min=new Date() max="2028-12-31"/>
+                <input type="date" id="time1" name = "date1" value=new Date() min=new Date() max="2028-12-31"/><br><br>
+        
+                <p id="output">Change the Date</p><br>
+                宿泊人数：<select id="ninzu">
+                    <option value="null">選択してください</option>
+                    <option value="5000">1名</option>
+                    <option value="9500">2名</option>
+                    <option value="14000">3名</option>
+                    <option value="18000">4名</option>
+                    <option value="23000">5名</option>
+                    <option value="37000">6名</option>
+                </select><br><br>
+                こだわり設定<br>
+                <select id="ex_age">
+                    <option value="under">こだわりなし</option>
+                    <option value="over">こだわりあり</option>
+                    </select><br>
+                
+                <input type="checkbox" id="hitch" class="checks" name="fruit" value="3000" onchange="calc()" disabled> 露天風呂あり<br>
+                <input type="checkbox" id="hitch" class="checks" name="fruit1" value="1000" onchange="calc()" disabled> 喫煙<br>
+                <input type="checkbox" id="hitch2" class="checks" name="fruit2" value="2500" onchange="calc()" disabled> 朝食あり<br>
+                <br>
+                <label for="email">メールアドレス:</label>
+
+                <input type="email" id="email" pattern=".+@globex\.com" size="30" required />
+                <br><br>
+                <label for="phone">電話番号:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <br>
+                <small>Format: XXX-XXXX-XXXX</small><br><br>
+                合計金額：<input type="text" name="result" value="まだ決まっていません" readonly><input type="button" onclick="location.href='kakutei.html'" value="確定">
+                <br><br><br>
+                <a href="https://jp.freepik.com/free-vector/hand-drawn-background-of-natural-watercolour-spots-with-leaves_12024457.htm#query=%E8%83%8C%E6%99%AF%20%E3%81%8A%E3%81%97%E3%82%83%E3%82%8C&position=1&from_view=keyword&track=ais">著作者：VecMes</a>／出典：Freepik
+            </div>
+            <div class="imageshow">
+                <div id = "buttons1">
+                    <button onclick = "modoru()"> ◀︎ </button>
+                    <button onclick = "susumu()"> ▶︎ </button>
+            </div>
+                
+                <!-- １番外の可視領域 -->
+            <div id = "grandparent">
+                <!-- 要素を並べる領域 -->
+                <div id = "parent">
+                      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32xLFMIG_21l_yNSmdpn70mFmUKeWJWTOcjoCKShE8jeLyucpfqEs18Fv7QvePLtTTps&usqp=CAU">
+                      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShe7_u5ScdLuByFpqJUtP04Or3Q2CVZKzlcou7b47TLrVe0lxvW4NchaXHllNkP_5dTm8&usqp=CAU">
+                      <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DqFjkVuzY1sMatAhJtKh37qaeC0-mtoocs9OaXP_iXkAYfdsvr_ZHG6eQr0cqQmOKdY&usqp=CAU">
+                      <img src = "https://blog.foto.ne.jp/free/img/images_big/sit0009-001.jpg">
+                </div>
+            </div>
+        </div>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481.5589309474685!2d139.78990168470176!3d35.71319589045906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ebe311b780b%3A0x9c4f010914e00a1f!2z44CSMTExLTAwMzUg5p2x5Lqs6YO95Y-w5p2x5Yy66KW_5rWF6I2J77yS5LiB55uu77yR77yX4oiS77yR77yS!5e0!3m2!1sja!2sjp!4v1696915714064!5m2!1sja!2sjp" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="koutu"><h4>公共交通機関</h4><p>浅草駅から徒歩10分<br>駐車場なし</p></div>
+            <div class="sisetu"><h4>ロケーションポイント</h4><p>雷門徒歩１５分</p></div>
+            
+            
+            </div>
+        
+        <script src="kansu.js"> 
+        
+        </script>
+        
+        <script src="onoff.js"> 
+        </script>
+        
+        <script src="slide.js"> 
+        </script>
+
+        </body>
+        </html>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="md-flex md-justify-between">
+            <a href="X" class="footer__logo">
+              <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s5cf9a3965cda199c/image/i9ce8e52bcb8f7cfe/version/1474086423/image.png" width="140" height="150" alt="JAJAAAN Logo" />
+            </a>
+            <div class="grid">
+              <div>
+                <p class="footer__navi-heading">SERVICE</p>
+                <ul class="footer__navi">
+                  <li><a href="#">サービスA</a></li>
+                  <li><a href="#">サービスB</a></li>
+                  <li><a href="#">サービスC</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="footer__navi-heading">FOLLOW US</p>
+                <ul class="footer__navi">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="footer__navi-heading">ABOUT</p>
+                <ul class="footer__navi">
+                  <li><a href="#">会社概要</a></li>
+                  <li><a href="#">お問い合わせ</a></li>
+                  <li><a href="#">サイトマップ</a></li>
+                  <li><a href="#">プライバシーポリシー</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">© 2023 <a href="https://jajaaan.co.jp/">JAJAAAN Inc.</a> All Rights Reserved.
+          </p>
+        </footer>
+      </footer>
+</body>
+</html>

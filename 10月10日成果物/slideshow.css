@@ -1,0 +1,21 @@
+
+#grandparent {
+    width:350px;
+    height:350px;
+    overflow:hidden;
+    border:solid 2px;
+
+}
+
+#parent {
+    width:400%;
+    height:100%;
+    background-color:#ffffff;
+    display:flex;
+}
+
+
+#parent img {
+    width:100%;
+    margin:10px;
+}
