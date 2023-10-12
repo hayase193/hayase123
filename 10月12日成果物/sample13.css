@@ -1,0 +1,69 @@
+.content1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: relative;/*親要素*/
+}
+
+.content2{
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;/*子要素*/
+    top: 100px;
+    left: 300px;
+}
+
+.content3{
+    background-color:green;
+    width: 100px;
+    height: 100px;
+    position: fixed;/*画面の決まった位置に固定　absoluteを基準とするが画面をスクロールしても位置が固定*/
+    top: 300px;
+    left: 300px;
+}
+
+.header-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: orange;
+    color: white;
+}
+
+p{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.content4{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    top: 130px;
+    left: 300px;
+    position: absolute;
+    z-index: 3;
+}
+
+.content5{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    top: 160px;
+    left: 300px;
+    position: absolute;
+    z-index: 1;
+}
+
+.content6{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 300px;
+    position: absolute;
+    z-index: 2;
+}

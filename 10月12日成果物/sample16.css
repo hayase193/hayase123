@@ -1,0 +1,23 @@
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    float: left;
+}
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    float: left;/*froatは要素的には浮いている状態*/
+}
+
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    clear:both;
+}
+
+.pic{
+    float: left;
+}
