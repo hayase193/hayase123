@@ -1,0 +1,55 @@
+.parent{
+    width: 800px;
+    height: 800px;
+    background-color: yellow;
+    display: flex;/*親要素の指定*/
+    flex-direction:row;/*子要素の並び順*/
+    justify-content: space-around;/*横方向の移動*/
+    align-items: flex-end;/*縦方向の移動*/
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: green
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.logo{
+    font-size: 35px;
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    line-height: 100px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav li{
+    width: 100px;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 50px;
+    line-height: 100px;
+}
