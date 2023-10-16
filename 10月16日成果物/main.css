@@ -1,0 +1,144 @@
+body, h1, h2, p, ul{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+    background-color: rgb(16, 209, 209);
+    height: 100px;
+    width: auto;
+    display: flex;
+}
+
+.top-logo{
+  height: 110px;
+  width: 110px;
+}
+
+.pic{
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+}
+
+.nav{
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.nav ul{
+  position: relative;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav li{
+  margin: 15px;
+}
+
+.nav a{
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover{
+  opacity: 0.5;
+}
+
+.main{
+  position: relative;
+  background-color: antiquewhite;
+  height: 800px;
+  width: auto;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 100px;
+    
+}
+
+.text-main{
+  position: relative;
+  height: 800px;
+  width: 800px;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  background-image: url("02.png");
+  background-repeat: no-repeat;/*リピートなし*/
+  background-size:cover;
+  border: 1px solid #ddd;
+}
+
+.footer{
+    background-color:darkcyan;
+    height: 200px;
+    margin: auto;
+}
+
+.choise{
+  position: absolute;
+  height: 700px;
+  width: auto;
+  bottom: 30px;
+  left: 520px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: rgba(214, 220, 245, 0.356);
+}
+
+.koutu{
+  position: absolute;
+  height: 18%;
+  width: 22%;
+  bottom: 0;
+  left: 250px;
+  box-sizing: border-box;
+  background-color: rgba(214, 220, 245, 0.356);
+}
+
+.sisetu{
+  position: absolute;
+  height: 18%;
+  width: 22%;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-color: rgba(214, 220, 245, 0.356);
+}
+
+.imageshow{
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  top: 60px;
+  left: 50px;
+  box-sizing: border-box;
+}
+
+.map{
+  position: absolute;
+  top: 450px;
+  left: 50px;
+}
+
+h2,h4{
+  color:aliceblue;
+  background-color: cadetblue;
+  border: 1px solid #26337c;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+}
