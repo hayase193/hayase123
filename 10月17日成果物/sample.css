@@ -1,0 +1,173 @@
+.body{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.site h1 {
+    font-size: 35px;
+    margin: 30px;
+    color: #9ed9db;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav li{
+    margin-right: 10px;
+}
+
+.nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover{
+    opacity: 0.5;
+}
+
+.hero{
+    background-image: url(pan.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.first-sentence{
+    color: aliceblue;
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: #3399ff;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: aliceblue;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.btn:hover{
+    opacity: 0.6;
+}
+
+.main-sentence{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #3399ff;
+}
+
+.main-left{
+    display: flex;
+    text-align: center;
+}
+
+.main-right{
+    display: flex;
+    text-align: center;
+}
+
+.main-content img{
+    width: 400px;
+    height: 400px;
+}
+
+.pic4{
+    width: 400px;
+    height: 520px;
+}
+
+.main-content a{
+    text-decoration: none;
+    color: #3399ff;
+}
+
+.main-content img :hover{
+    opacity: 0.7;
+}
+
+.main-content p :hover{
+    opacity: 0.7;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    font-size: 15%;
+    background-color: #3399ff;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+}
+
+/*店舗概要*/
+
+.about{
+    background-color: #3399ff;
+    padding-top: 50px;
+}
+
+.about-main{
+    text-align: center;
+    background-color: white;
+    width: 85%;
+    margin: auto;
+}
+
+.about-main h2{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+
+.shopname{
+    font-size: 30px;
+    color: #3399ff;
+    padding-bottom: 20px;
+}
+
+table{
+    margin: auto;
+    width: 95%;
+}
+
+table th{
+    padding: 20px;
+    color: #3399ff;
+}
+
+table td{
+    padding: 20px;
+}
+
+.access{
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mapsize{
+    width: 95%;
+    height: 500px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
