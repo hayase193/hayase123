@@ -1,0 +1,416 @@
+.body{
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.header{
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.site h1 {
+    font-size: 35px;
+    margin: 30px;
+    color: #9ed9db;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav li{
+    margin-right: 10px;
+}
+
+.nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover{
+    opacity: 0.5;
+}
+
+.hero{
+    background-image: url(pan.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.first-sentence{
+    color: aliceblue;
+    font-size: 50px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: #3399ff;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 25px;
+    border-radius: 10px;
+    color: aliceblue;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.btn:hover{
+    opacity: 0.6;
+}
+/*メインメニュー*/
+
+.menu-sentence{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #3399ff;
+}
+
+.main-left{
+    display: flex;
+    text-align: center;
+}
+
+.main-right{
+    display: flex;
+    text-align: center;
+}
+
+.main-content img{
+    width: 300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-content a{
+    text-decoration: none;
+    color: #3399ff;
+}
+
+.main-content img :hover{
+    opacity: 0.7;
+}
+
+.main-content p :hover{
+    opacity: 0.7;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: 15%;
+    background-color: #3399ff;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+}
+
+/*店舗概要*/
+
+.about{
+    background-color: #3399ff;
+    padding-top: 50px;
+}
+
+.about-main{
+    text-align: center;
+    background-color: white;
+    width: 85%;
+    margin: auto;
+}
+
+.about-main h2{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+
+.shopname{
+    font-size: 30px;
+    color: #3399ff;
+    padding-bottom: 20px;
+}
+
+table{
+    margin: auto;
+    width: 95%;
+}
+
+table th{
+    padding: 20px;
+    color: #3399ff;
+}
+
+table td{
+    padding: 20px;
+}
+
+.access{
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mapsize{
+    width: 95%;
+    height: 500px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+/*お問い合わせ*/
+
+.contact h2{
+    color: #3399ff;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact{
+    text-align: center;
+    padding-top: 50px;
+    background-color: #3399ff;
+}
+
+.contact-inner{
+    background-color: aliceblue;
+    margin: auto;
+    width: 90%;
+}
+
+label{
+    display: block;
+}
+
+.contact-form{
+    font-size: 30px;
+}
+
+.item1 input{
+    width: 85%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.item1 input{
+    width: 85%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.item2 input{
+    width: 85%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.item3 textarea{
+    width: 85%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.item4 input{
+    width: 85%;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 45px;
+}
+
+/*記事*/
+.mainmenu{
+    text-align: center;
+    background-color: #3399ff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.menu-left-content{
+    background-color: aliceblue;
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu-left-content h2{
+    margin-bottom: 10px;
+}
+
+.menu-left-content p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.top-menu img{
+    width: 100%;
+    height: auto;
+}
+
+.menu-right-content{
+    background-color: aliceblue;
+    margin: auto;
+    width: 85%;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.menu-right-content h3{
+    font-size: 30px;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.menuing img{
+    width: 100px;
+    height: auto;
+}
+
+.menu-list p{
+    margin-left: 10px;
+}
+
+.menu-right-content a{
+    text-decoration: none;
+    color: #3399ff;
+    display: block;
+}
+
+.menu-right-content a:hover{
+    opacity: 0.5;
+}
+
+/*ヘッダーパソコン*/
+
+@media screen and (min-width: 650px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .site{
+        padding-bottom: 20px;
+    }
+}
+
+/*ヒーローヘッダーパソコン*/
+@media screen and (min-width: 650px){
+    .first-sentence{
+        font-size: 60px;
+        padding-top: 170px;
+    }
+    .btn{
+        width: 300px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .menu-sentence{
+        font-size: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .main-content{
+        display: flex;
+    }
+}
+/*フッターパソコン*/
+@media screen and (min-width: 650px){
+    footer{
+        font-size: 20px;
+    }
+}
+
+/*記事メニューパソコン*/
+@media screen and (min-width: 900px){
+    .mainmenu{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu-main-left{
+        width: 70%;
+    }
+    .menu-left-content{
+        margin-top: 20px;
+        padding: 30px;
+        width: auto;
+    }
+    .menu-right-content{
+        margin-top: 20px;
+        padding: 20px;
+        width: auto;
+    }
+}
+
+/*店舗概要　パソコン*/
+
+@media screen and (min-width: 900px){
+    .about-main{
+        width: 90%;
+        text-align: left;
+    }
+    .about-main h2{
+        font-size: 60px;
+        padding-left: 2.5%;
+    }
+    .shopname{
+        font-size: 40px;
+        padding-left: 2.5%;
+    }
+    .access{
+        padding-left: 2.5%;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .contact h2{
+        font-size: 50px;
+    }
+
+    .contact-form{
+        font-size: 40px;
+    }
+
+    .item1 input{
+        width: 50%;
+        height: 50px;
+        font-size: 35px;
+    }
+    .item2 input{
+        width: 50%;
+        height: 50px;
+        font-size: 35px;
+    }
+    .item3 textarea{
+        width: 50%;
+        height: 80px;
+    }
+    .item4 input{
+        width: 50%;
+        font-size: 30px;
+    }
+}
